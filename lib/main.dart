@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thaliparamb_store_ui/screens/login_page.dart';
+import 'package:thaliparamb_store_ui/screens/sign_up_page.dart';
 import 'package:thaliparamb_store_ui/screens/welcome_screen.dart';
 
 import 'utils/constants.dart';
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(hintColor: grey),
-      home: LoginPage(),
+      theme: ThemeData(hintColor: grey,
+      ),
+      home: SignUpPage(),
     );
   }
 }
