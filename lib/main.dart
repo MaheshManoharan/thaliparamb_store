@@ -5,9 +5,12 @@ import 'package:thaliparamb_store_ui/screens/sign_up_page1.dart';
 import 'package:thaliparamb_store_ui/screens/signup_page2.dart';
 import 'package:thaliparamb_store_ui/screens/store_adding_6.dart';
 import 'package:thaliparamb_store_ui/screens/welcome_screen.dart';
+import 'package:thaliparamb_store_ui/widgets/powered_by_teleo.dart';
 
+import 'screens/home2.dart';
 import 'screens/store_adding_1.dart';
 import 'screens/store_adding_2.dart';
+import 'screens/store_adding_3.dart';
 import 'screens/store_adding_4.dart';
 import 'utils/constants.dart';
 
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         hintColor: grey,
       ),
-      home: StoreAdding2(),
+      home: SafeArea(child: Home2()),
     );
   }
 }
