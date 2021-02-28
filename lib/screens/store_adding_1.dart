@@ -1,8 +1,7 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:thaliparamb_store_ui/utils/constants.dart';
 
-class StoreAdding6 extends StatelessWidget {
+class StoreAdding1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +28,7 @@ class StoreAdding6 extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Enter manager details',
+                    'Enter your store details',
                     style: TextStyle(color: grey, fontSize: 21.0),
                   ),
                 ],
@@ -42,7 +41,17 @@ class StoreAdding6 extends StatelessWidget {
                 child: TextField(
                   textAlign: TextAlign.start,
                   decoration: InputDecoration(
-                    hintText: "Name",
+                    hintText: "Shop name",
+                    //hintStyle: TextStyle(color: grey),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+                child: TextField(
+                  textAlign: TextAlign.start,
+                  decoration: InputDecoration(
+                    hintText: "Address",
                     hintStyle: TextStyle(color: grey),
                   ),
                 ),
@@ -52,17 +61,7 @@ class StoreAdding6 extends StatelessWidget {
                 child: TextField(
                   textAlign: TextAlign.start,
                   decoration: InputDecoration(
-                    hintText: "Email Address",
-                    hintStyle: TextStyle(color: grey),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0),
-                child: TextField(
-                  textAlign: TextAlign.start,
-                  decoration: InputDecoration(
-                    hintText: "Phone number",
+                    hintText: "City",
                     hintStyle: TextStyle(color: grey),
                   ),
                 ),
@@ -82,7 +81,7 @@ class StoreAdding6 extends StatelessWidget {
                 child: TextField(
                   textAlign: TextAlign.start,
                   decoration: InputDecoration(
-                    hintText: "Store ID",
+                    hintText: "Contact number",
                     hintStyle: TextStyle(color: grey),
                   ),
                 ),
@@ -92,8 +91,8 @@ class StoreAdding6 extends StatelessWidget {
                 child: TextField(
                   textAlign: TextAlign.start,
                   decoration: InputDecoration(
-                    hintText: "Store Name",
-                    hintStyle: TextStyle(color: grey),
+                    border: OutlineInputBorder(),
+                    hintText: "enter store type",
                   ),
                 ),
               ),
