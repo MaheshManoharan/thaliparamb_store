@@ -13,7 +13,7 @@ class PoweredByTeleo extends StatelessWidget {
           'Store Name',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 22.0,
+            fontSize: 16.0,
             color: white,
           ),
         ),
@@ -25,10 +25,11 @@ class PoweredByTeleo extends StatelessWidget {
             ),
             Text(
               'Powered by Teleo',
-              style: TextStyle(color: white),
+              style: TextStyle(color: white, fontSize: 12.0),
             )
           ],
-        )
+        ),
+
       ],
     );
   }
