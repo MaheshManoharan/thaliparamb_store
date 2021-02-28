@@ -7,6 +7,7 @@ import 'package:thaliparamb_store_ui/screens/store_adding_6.dart';
 import 'package:thaliparamb_store_ui/screens/welcome_screen.dart';
 
 import 'screens/store_adding_1.dart';
+import 'screens/store_adding_2.dart';
 import 'screens/store_adding_4.dart';
 import 'utils/constants.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         hintColor: grey,
       ),
-      home: StoreAdding4(),
+      home: StoreAdding2(),
     );
   }
 }
