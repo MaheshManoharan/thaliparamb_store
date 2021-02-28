@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thaliparamb_store_ui/utils/constants.dart';
 
-class StoreAdding1 extends StatelessWidget {
+class StoreAdding4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,7 @@ class StoreAdding1 extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Enter your store details',
+                    'Enter manager details',
                     style: TextStyle(color: grey, fontSize: 21.0),
                   ),
                 ],
@@ -41,7 +41,7 @@ class StoreAdding1 extends StatelessWidget {
                 child: TextField(
                   textAlign: TextAlign.start,
                   decoration: InputDecoration(
-                    hintText: "Shop name",
+                    hintText: "Name",
                     //hintStyle: TextStyle(color: grey),
                   ),
                 ),
@@ -50,18 +50,22 @@ class StoreAdding1 extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: TextField(
                   textAlign: TextAlign.start,
+                  keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                    hintText: "Address",
+                    hintText: "Email Address",
                     hintStyle: TextStyle(color: grey),
                   ),
                 ),
               ),
+             
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: TextField(
                   textAlign: TextAlign.start,
+
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    hintText: "City",
+                    hintText: "Phone number",
                     hintStyle: TextStyle(color: grey),
                   ),
                 ),
@@ -76,26 +80,7 @@ class StoreAdding1 extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0),
-                child: TextField(
-                  textAlign: TextAlign.start,
-                  decoration: InputDecoration(
-                    hintText: "Contact number",
-                    hintStyle: TextStyle(color: grey),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0),
-                child: TextField(
-                  textAlign: TextAlign.start,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: "enter store type",
-                  ),
-                ),
-              ),
+             SizedBox(height: 40,),
               Padding(
                 padding: const EdgeInsets.only(top: 30.0),
                 child: Center(
@@ -117,7 +102,7 @@ class StoreAdding1 extends StatelessWidget {
                               //SIGN UP BUTTON PRESSED
                             },
                             child: Text(
-                              'CONFIRM',
+                              'NEXT',
                               style: TextStyle(
                                 letterSpacing: 5.0,
                                 fontWeight: FontWeight.w900,
