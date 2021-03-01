@@ -8,6 +8,7 @@ import 'package:thaliparamb_store_ui/screens/store_adding_6.dart';
 import 'package:thaliparamb_store_ui/screens/welcome_screen.dart';
 import 'package:thaliparamb_store_ui/widgets/powered_by_teleo.dart';
 
+import 'screens/add_product_2.dart';
 import 'screens/home15.dart';
 import 'screens/home2.dart';
 import 'screens/store_adding_1.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         hintColor: grey,
       ),
       home: SafeArea(
-        child: AddProduct(),
+        child: AddProduct2(),
       ),
     );
   }
