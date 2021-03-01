@@ -281,7 +281,8 @@ class AddProduct extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: DropdownButton<String>(
+                          child: DropdownButtonFormField<String>(
+                            decoration: InputDecoration(labelText: 'Unit'),
                             items: <String>[
                               'gm',
                               'mL',
