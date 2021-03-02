@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thaliparamb_store_ui/screens/add_product.dart';
+import 'package:thaliparamb_store_ui/screens/home_5.dart';
 import 'package:thaliparamb_store_ui/screens/login_page.dart';
 import 'package:thaliparamb_store_ui/screens/sign_up_page.dart';
 import 'package:thaliparamb_store_ui/screens/sign_up_page1.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         hintColor: grey,
       ),
       home: SafeArea(
-        child: AddProduct3(),
+        child: Home5(),
       ),
     );
   }
