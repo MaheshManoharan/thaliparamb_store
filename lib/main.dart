@@ -20,19 +20,183 @@ import 'screens/store_adding_4.dart';
 import 'utils/constants.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        hintColor: grey,
-      ),
-      home: SafeArea(
-        child: Home5(),
+  Widget build(BuildContext contextn) {
+    return SafeArea(
+      child: Scaffold(
+        body: Builder(
+          builder: (context) => ListView(
+            children: [
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => AddProduct2(),
+                    ),
+                  );
+                },
+                child: Text('addproduct2'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => AddProduct3(),
+                    ),
+                  );
+                },
+                child: Text('addproduct3'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => AddProduct(),
+                    ),
+                  );
+                },
+                child: Text('addproduct'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => Home5(),
+                    ),
+                  );
+                },
+                child: Text('home5'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => Home2(),
+                    ),
+                  );
+                },
+                child: Text('home2'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => Home15(),
+                    ),
+                  );
+                },
+                child: Text('home15'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => LoginPage(),
+                    ),
+                  );
+                },
+                child: Text('loginpage'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => SignUpPage(),
+                    ),
+                  );
+                },
+                child: Text('signuppage'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => SignUpPage1(),
+                    ),
+                  );
+                },
+                child: Text('signuppage1'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => SignUpPage2(),
+                    ),
+                  );
+                },
+                child: Text('signuppage2'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => StoreAdding1(),
+                    ),
+                  );
+                },
+                child: Text('storeadding1'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => StoreAdding2(),
+                    ),
+                  );
+                },
+                child: Text('storeadding2'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => StoreAdding3(),
+                    ),
+                  );
+                },
+                child: Text('storeadding3'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => StoreAdding4(),
+                    ),
+                  );
+                },
+                child: Text('storeadding4'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => StoreAdding6(),
+                    ),
+                  );
+                },
+                child: Text('storeadding6'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(contextn).push(
+                    MaterialPageRoute(
+                      builder: (context) => WelcomeScreen(),
+                    ),
+                  );
+                },
+                child: Text('welcomesreen'),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
